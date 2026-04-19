@@ -1,4 +1,4 @@
-# Product Requirement Document (PRD)
+#Product Requirement Document (PRD)
 
 ## **DocuMind AI**
 
@@ -29,6 +29,8 @@ It uses a Retrieval-Augmented Generation (RAG) pipeline to:
 * Retrieve relevant document content
 * Generate accurate, contextual answers
 * Provide source-backed responses
+
+The system is designed for enterprise deployment, where each company can deploy DocuMind in its own AWS account using infrastructure automation.
 
 ---
 
@@ -104,7 +106,34 @@ It uses a Retrieval-Augmented Generation (RAG) pipeline to:
 
 ---
 
-## 10. Future Scope
+## 10. Deployment Model
+
+DocuMind follows a **single-tenant deployment model**.
+
+* Each company deploys the system in its own AWS account
+* Infrastructure is provisioned using Terraform
+* Data remains fully isolated per company
+* No shared storage or cross-tenant access
+
+This ensures:
+
+* High security
+* Data ownership
+* Enterprise compliance readiness
+
+---
+
+## 11. Non-Functional Requirements
+
+* Response time: < 5 seconds
+* System availability: High (serverless auto-scaling)
+* Security: Strict tenant isolation
+* Scalability: Handle increasing document size and queries
+* Reliability: Graceful handling of failures
+
+---
+
+## 12. Future Scope
 
 * SaaS onboarding dashboard
 * Document versioning
