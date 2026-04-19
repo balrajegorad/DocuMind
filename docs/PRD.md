@@ -1,8 +1,8 @@
 # Product Requirement Document (PRD)
 
-## Product Name
+## **DocuMind AI**
 
-**DocuMind**
+
 
 ---
 
