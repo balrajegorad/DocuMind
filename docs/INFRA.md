@@ -206,3 +206,5 @@ terraform apply
 * Multi-region deployment
 * Auto-scaling Qdrant
 * CI/CD pipeline integration
+
+
